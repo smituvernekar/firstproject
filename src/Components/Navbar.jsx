@@ -30,7 +30,9 @@ mobileMenu ? setMobileMenu(false) : setMobileMenu(true);
   return (
     <nav className={`container ${sticky ? "dark-nav" : ""}`}>
       <img src={logo} alt="Logo" className="logo" />
-      <ul className={mobileMenu ? '': 'hide-mobile-menu'}>
+      <ul className={mobileMenu ? 'mobile-menu active' : 'mobile-menu'}>
+
+
         <li>
           <Link to="hero" smooth={true} offset={0} duration={500}>
             Home
